@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <button id="add-button" class="add-btn">Add Birthday</button>
+        <button id="summary-button" class="summary-btn">View Summary</button>
+        <button id="delete-button" class="delete-btn">Delete Birthday</button>
+    </div>
+
+    <!-- Add Page -->
+    <div id="add-page" class="page hidden">
+        <h2>Add Birthday</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <button type="button" id="add-submit" class="add-btn">Submit</button>
+        </form>
+        <button onclick="showPage('landing-page')" class="summary-btn">Back</button>
+    </div>
+
+    <!-- Summary Page -->
+    <div id="summary-page" class="page hidden">
+        <h2>Summary</h2>
+        <div id="summary-container"></div>
+        <button onclick="showPage('landing-page')" class="summary-btn">Back</button>
+    </div>
+
+    <!-- Delete Page -->
+    <div id="delete-page" class="page hidden">
+        <h2>Delete Birthday</h2>
+        <form>
+            <div class="form-group">
+                <label for="delete-dropdown">Select Name:</label>
+                <select id="delete-dropdown"></select>
+            </div>
+            <button type="button" id="delete-submit" class="delete-btn">Delete</button>
+        </form>
+        <button onclick="showPage('landing-page')" class="summary-btn">Back</button>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

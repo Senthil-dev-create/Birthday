@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Colors */
+button.add-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+button.summary-btn {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Hidden Pages */
+.hidden {
+    display: none;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #008CBA;
+    box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+}
+
+/* Month Section Styling */
+.month-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    table-layout: fixed; /* Ensures column widths are consistent */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px 15px; /* Increased padding for better alignment */
+    text-align: left;
+    text-transform: uppercase; /* Automatically Uppercase */
+    word-wrap: break-word; /* Ensure long words break and do not overflow */
+}
+
+table th {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+/* Light Color Tables */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Adjust the header background color for each month */
+table th {
+    background-color: #e0e0e0;
+}
+
+/* Month-Specific Table Header Colors */
+.month-section[data-month="January"] {
+    background-color: #FFEB3B;
+}
+
+.month-section[data-month="February"] {
+    background-color: #FF9800;
+}
+
+.month-section[data-month="March"] {
+    background-color: #4CAF50;
+}
+
+.month-section[data-month="April"] {
+    background-color: #2196F3;
+}
+
+.month-section[data-month="May"] {
+    background-color: #9C27B0;
+}
+
+.month-section[data-month="June"] {
+    background-color: #E91E63;
+}
+
+.month-section[data-month="July"] {
+    background-color: #FF5722;
+}
+
+.month-section[data-month="August"] {
+    background-color: #795548;
+}
+
+.month-section[data-month="September"] {
+    background-color: #3F51B5;
+}
+
+.month-section[data-month="October"] {
+    background-color: #673AB7;
+}
+
+.month-section[data-month="November"] {
+    background-color: #607D8B;
+}
+
+.month-section[data-month="December"] {
+    background-color: #009688;
+}
